@@ -12,8 +12,6 @@ for i, v in next, body.data do
 end
 end
 
-GetServers()
-
 function Hop()
 if #servers > 0 then
 TeleportService:TeleportToPlaceInstance(game.PlaceId, servers[math.random(1, #servers)], game:GetService("Players").LocalPlayer)
@@ -29,7 +27,7 @@ return
 end
 
 
+
 queue_on_teleport('print("Harvox")')
-
-
+GetServers()
 Hop()
